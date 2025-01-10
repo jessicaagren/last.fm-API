@@ -1,3 +1,11 @@
+export type Root = {
+    topartists: {
+      artist: Artist[]
+      attr: Attr;
+    }
+  }
+  
+
 export type Artist = {
     name: string;
     playcount: string;
@@ -11,3 +19,10 @@ export type Artist = {
     }>
   }
   
+  export type Attr = {
+        country: string;
+        page: string;
+        perPage: string;
+        totalPages: string;
+        total: string;
+      }
